@@ -1,0 +1,14 @@
+main {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 120px);
+    background-color: var(--bleuclair);
+    background-image: url(../image/ciel-jour.jpg);
+    background-position: 50% 60%;
+    background-size: 100%;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+

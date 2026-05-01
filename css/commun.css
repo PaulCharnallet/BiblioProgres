@@ -1,0 +1,109 @@
+
+/* Definir des noms de couleur et police d'ecriture*/
+
+:root {
+    --noir: #001918;
+    --blanc: #EEFFFB;
+    --bleuclair: #70C0D6;
+    --bleu: #355067;
+    --vert: #4F6E26;
+}
+
+@font-face {
+  font-family: mainfont;
+  src: url(../font/Fredoka-VariableFont_wdth\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "mainfont";
+    list-style: none;   
+}
+
+
+/* En tete - Header */
+
+header {
+    display: flex;
+    background-color: var(--noir);
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+}
+
+header a {
+    color: var(--blanc);
+    font-size: 26px;
+    text-decoration: none;
+
+}
+
+.commun-lienlogo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 460px;
+}
+
+.commun-lienlogo img {
+    height: 95%;
+    background-color: var(--blanc);
+    border-radius: 50%;
+}
+
+.commun-header-3lien {
+    display: flex;
+    gap: 40px;
+}
+
+
+/* Footer - Pied de page */
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--noir);
+    height: 300px;
+    gap: 200px;
+    align-items: center;
+}
+
+.footer-separation {
+    width: 2px;
+    height: 250px;
+    background-color: var(--bleuclair);
+}
+
+footer h2, footer p, footer a, footer li {
+    color: var(--bleuclair);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.commun-footer-navigation, .commun-footer-legal, .commun-footer-credit {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.commun-footer-legal {
+    justify-content: space-around;
+}
+
+.commun-footer-navigation h2,
+.commun-footer-credit h2
+ {
+    margin: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
