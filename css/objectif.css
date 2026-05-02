@@ -1,0 +1,87 @@
+/* Decoration sur les cotés de la page */
+
+.objectif-decorationaside {
+    display:flex;
+    justify-content: center;
+    height: 10000px;
+}
+
+aside {
+    width: 12%;
+    background-image: url(../image/ciel-jour.jpg);
+}
+
+main {
+    width: 76%;
+    min-width: 1000px;
+    background-color: var(--blanc);
+}
+
+/* premier etage - Introduction à mes objectifs */
+
+.etage1 {
+    height: calc(100vh - 120px);
+    min-height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin: 40px 0px;
+}
+
+#ecran-code {
+    width: 360px;
+    height: 500px;
+    border: 2px solid var(--noir);
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.etage1 p {
+    width: 370px;
+    font-size: 24px;
+    text-align: justify;
+}
+
+/* deuxieme etage - mes axes d'ameliorations */
+
+.etage2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.objectif-listecarte {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+.objectif-carte {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid var(--noir);
+    width: 220px;
+    height: 280px;
+    border-radius:30px
+}
+
+.objectif-carte img {
+    width: 180px;
+    height: 180px;
+    background-color: aquamarine;
+    border-radius: 50%;
+}
+
+.objectif-carte a {
+    color: var(--bleu);
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 18px;
+}

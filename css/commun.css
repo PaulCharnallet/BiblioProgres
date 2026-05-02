@@ -1,6 +1,5 @@
 
 /* Definir des noms de couleur et police d'ecriture*/
-
 :root {
     --noir: #001918;
     --blanc: #EEFFFB;
@@ -19,7 +18,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "mainfont";
-    list-style: none;   
+    list-style: none;  
+}
+
+a {
+    text-decoration: none;
+    color: var(--noir);
+}
+
+.lien-bleu {
+    text-decoration: underline;
+    color: var(--bleu);
 }
 
 
@@ -50,7 +59,8 @@ header a {
 }
 
 .commun-lienlogo img {
-    height: 95%;
+    height: 100px;
+    width: 100px;
     background-color: var(--blanc);
     border-radius: 50%;
 }
@@ -67,9 +77,10 @@ footer {
     display: flex;
     justify-content: center;
     background-color: var(--noir);
-    height: 300px;
-    gap: 200px;
+    min-height: 300px;
+    gap: 100px;
     align-items: center;
+    padding:50px;
 }
 
 .footer-separation {
@@ -86,6 +97,7 @@ footer h2, footer p, footer a, footer li {
 
 .commun-footer-navigation, .commun-footer-legal, .commun-footer-credit {
     height: 250px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -93,6 +105,7 @@ footer h2, footer p, footer a, footer li {
 
 .commun-footer-legal {
     justify-content: space-around;
+    align-items: center;
 }
 
 .commun-footer-navigation h2,
